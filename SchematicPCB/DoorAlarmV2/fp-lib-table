@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "CMI Devices beeper footprint")(type KiCad)(uri "C:/Users/makoto/Documents/KiCad/FreezerDoorAlarmV2/CMI Devices beeper footprint")(options "")(descr ""))
+  (lib (name DrillGuide)(type KiCad)(uri ${KIPRJMOD}/DrillGuide.pretty)(options "")(descr ""))
+)

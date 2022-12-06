@@ -1,0 +1,55 @@
+
+Fits in a single gang electrical box.
+Nominal width: 2 in = 50.8mm
+Nominal height: 4 in = 101.6mm (see below)
+Nominal depth: 1 7/8 in = 1.875 in = 47.625mm
+
+Two inside flanges for attaching top plate reduce height by ~10mm each, so usable height more like 80mm.
+
+PCB size target: 80mm x 50mm
+
+-----
+
+Simulation: See "falstadsim circuit.txt"
+
+-----
+
+https://www.digikey.com/en/products/detail/taiyo-yuden/LMK325B7476KM-PR/5810977
+
+47 uF X7R 10V 1210 ceramic cap, 3 in parallel for 141 uF (+ 562k 1% resistor = 61s to charge from 0 to 2.7V from a 5V regulated source)
+Manuf renamed part to MSASL32MSB7476KPNB25_RS sometime in late 2021.
+Manuf data sheet claims 100MOhm per uF for insulation resistance. That would make parallel of three = 4.7 GOhm / 3 = ~1.56 GOhm.
+
+-----
+
+Dual schmitt buffer, $0.33 @10 (not in-stock at Digikey)
+Mouser # 595-SN74LVC2G17DBVT
+
+32 mA max output drive at Vcc=4.5V  (full device limited to 50mA total, so keep each output to ~20mA)
+
+Data sheet says bypass with 0.1 uF cap as close as possible to VCC. (Multiple parallel caps OK if desired.)
+
+TI "DBV00006A" package legs are nearly identical to SOT-23-6 footprint. (Case is very slightly larger.)
+
+-------
+
+10mm Red LED
+https://www.mouser.com/ProductDetail/Kingbright/WP813SRD-E?qs=58z0TXQGVSToOd55Z46ELQ%3D%3D
+
+-----
+
+Buzzer - nice balance of cost vs loudness. $2.80 @10
+https://www.digikey.com/en/products/detail/cui-devices/CMI-1614C-120/6012412
+
+556 timer 
+https://www.digikey.com/en/products/detail/texas-instruments/NE556DBR/1571972
+
+PNP
+https://www.digikey.com/en/products/detail/diodes-incorporated/MMBT3906-7-F/770797
+
+-----
+
+10k trim pot for beep duration - https://www.digikey.com/en/products/detail/bourns-inc/TC33X-2-103E/612858
+
+500k trim pot for door open to alarm delay - https://www.digikey.com/en/products/detail/bourns-inc/TC33X-2-504E/2566902
+

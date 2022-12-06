@@ -1,0 +1,1092 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Barrel_Jack_Switch J1
+U 1 1 634F409D
+P 1200 5650
+F 0 "J1" H 1257 5967 50  0000 C CNN
+F 1 "Würth 694106301002" H 1257 5876 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 1250 5610 50  0001 C CNN
+F 3 "https://www.we-online.com/katalog/datasheet/6941xx301002.pdf" H 1250 5610 50  0001 C CNN
+	1    1200 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D1
+U 1 1 634F96A6
+P 1850 5550
+F 0 "D1" V 1804 5630 50  0000 L CNN
+F 1 "BAS16H" V 1895 5630 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 1850 5375 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/bas16ht1-d.pdf" H 1850 5550 50  0001 C CNN
+	1    1850 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 5550 1700 5550
+Wire Wire Line
+	1500 5750 1500 5850
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 6350EDA4
+P 2600 5550
+F 0 "FB1" V 2326 5550 50  0000 C CNN
+F 1 "WLBD2012HCU601TH" V 2417 5550 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 2530 5550 50  0001 C CNN
+F 3 "http://www.passivecomponent.com/wp-content/uploads/inductor/WLBD1005-4532_HC_Series.pdf" H 2600 5550 50  0001 C CNN
+	1    2600 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 635107AD
+P 2200 5700
+F 0 "C1" H 2315 5746 50  0000 L CNN
+F 1 "100n" H 2315 5655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2238 5550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104MACNNNC.jsp" H 2200 5700 50  0001 C CNN
+	1    2200 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5550 2450 5550
+$Comp
+L Device:C C2
+U 1 1 6351976F
+P 2800 5700
+F 0 "C2" H 2915 5746 50  0000 L CNN
+F 1 "100n" H 2915 5655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2838 5550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104MACNNNC.jsp" H 2800 5700 50  0001 C CNN
+	1    2800 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 63519F89
+P 3250 5700
+F 0 "C3" H 3365 5746 50  0000 L CNN
+F 1 "100n" H 3365 5655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3288 5550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104MACNNNC.jsp" H 3250 5700 50  0001 C CNN
+	1    3250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 6351A5B5
+P 3700 5700
+F 0 "C4" H 3815 5746 50  0000 L CNN
+F 1 "100n" H 3815 5655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3738 5550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104MACNNNC.jsp" H 3700 5700 50  0001 C CNN
+	1    3700 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 5550 2800 5550
+Wire Wire Line
+	2800 5550 3250 5550
+Connection ~ 2800 5550
+Wire Wire Line
+	3250 5550 3700 5550
+Connection ~ 3250 5550
+Wire Wire Line
+	3700 5850 3250 5850
+Wire Wire Line
+	2200 5850 2800 5850
+Wire Wire Line
+	2800 5850 3250 5850
+Connection ~ 2800 5850
+Connection ~ 3250 5850
+$Comp
+L Regulator_Linear:AP2204RB-5.0 U1
+U 1 1 6352190D
+P 4250 5550
+F 0 "U1" H 4250 5792 50  0000 C CNN
+F 1 "AS78L05R" H 4250 5701 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 4250 5775 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/AS78Lxx_Aug2013_DS.pdf" H 4250 5550 50  0001 C CNN
+	1    4250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 63524A87
+P 4650 5700
+F 0 "C5" H 4765 5746 50  0000 L CNN
+F 1 "100n" H 4765 5655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4688 5550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104MACNNNC.jsp" H 4650 5700 50  0001 C CNN
+	1    4650 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5550 3950 5550
+Connection ~ 3700 5550
+Wire Wire Line
+	3700 5850 4250 5850
+Connection ~ 3700 5850
+Wire Wire Line
+	4650 5850 4250 5850
+Connection ~ 4250 5850
+Wire Wire Line
+	4650 5550 4550 5550
+$Comp
+L power:GND #PWR02
+U 1 1 634F7938
+P 4250 5850
+F 0 "#PWR02" H 4250 5600 50  0001 C CNN
+F 1 "GND" H 4255 5677 50  0000 C CNN
+F 2 "" H 4250 5850 50  0001 C CNN
+F 3 "" H 4250 5850 50  0001 C CNN
+	1    4250 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 634F9432
+P 5000 5400
+F 0 "#PWR03" H 5000 5250 50  0001 C CNN
+F 1 "+5V" H 5015 5573 50  0000 C CNN
+F 2 "" H 5000 5400 50  0001 C CNN
+F 3 "" H 5000 5400 50  0001 C CNN
+	1    5000 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5550 5000 5550
+Wire Wire Line
+	5000 5550 5000 5400
+Connection ~ 4650 5550
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 6351A526
+P 800 1450
+F 0 "J2" H 718 1667 50  0000 C CNN
+F 1 "Phoenix #1729128" H 718 1576 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 800 1450 50  0001 C CNN
+F 3 "https://www.phoenixcontact.com/product/pdf/MTcyOTEyOA?_realm=us&_locale=en-US&blocks=commercial-data%2Ctechnical-data%2Cdrawings%2Capprovals%2Cclassifications%2Cenvironmental-compliance-data%2Call-accessories" H 800 1450 50  0001 C CNN
+	1    800  1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 6351EAEB
+P 3700 1600
+F 0 "#PWR04" H 3700 1350 50  0001 C CNN
+F 1 "GND" H 3705 1427 50  0000 C CNN
+F 2 "" H 3700 1600 50  0001 C CNN
+F 3 "" H 3700 1600 50  0001 C CNN
+	1    3700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 63520AEE
+P 3250 700
+F 0 "#PWR05" H 3250 550 50  0001 C CNN
+F 1 "+5V" H 3265 873 50  0000 C CNN
+F 2 "" H 3250 700 50  0001 C CNN
+F 3 "" H 3250 700 50  0001 C CNN
+	1    3250 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 6352521E
+P 1500 1250
+F 0 "L1" V 1690 1250 50  0000 C CNN
+F 1 "1000 uH" V 1599 1250 50  0000 C CNN
+F 2 "Inductor_SMD:L_1210_3225Metric" H 1500 1250 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=LB3218T102K%20%20&u=M" H 1500 1250 50  0001 C CNN
+	1    1500 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 635273B2
+P 2000 1250
+F 0 "R1" V 1793 1250 50  0000 C CNN
+F 1 "1k" V 1884 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1930 1250 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 2000 1250 50  0001 C CNN
+	1    2000 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 63528915
+P 2450 1250
+F 0 "R2" V 2243 1250 50  0000 C CNN
+F 1 "120" V 2334 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2380 1250 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 2450 1250 50  0001 C CNN
+	1    2450 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 63528E0D
+P 2900 1250
+F 0 "R3" V 2693 1250 50  0000 C CNN
+F 1 "120" V 2784 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2830 1250 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 2900 1250 50  0001 C CNN
+	1    2900 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 6352957A
+P 3250 1400
+F 0 "C6" H 3365 1446 50  0000 L CNN
+F 1 "100n" H 3365 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3288 1250 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104MACNNNC.jsp" H 3250 1400 50  0001 C CNN
+	1    3250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 6352B514
+P 3700 1400
+F 0 "C7" H 3815 1446 50  0000 L CNN
+F 1 "100n" H 3815 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3738 1250 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104MACNNNC.jsp" H 3700 1400 50  0001 C CNN
+	1    3700 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1550 3250 1550
+Wire Wire Line
+	2750 1250 2600 1250
+Wire Wire Line
+	2300 1250 2150 1250
+Wire Wire Line
+	1850 1250 1650 1250
+$Comp
+L Device:R R4
+U 1 1 6352FB91
+P 3250 900
+F 0 "R4" H 3320 946 50  0000 L CNN
+F 1 "8.2k" H 3320 855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3180 900 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 3250 900 50  0001 C CNN
+	1    3250 900 
+	1    0    0    -1  
+$EndComp
+Connection ~ 3700 1250
+Wire Wire Line
+	1000 1450 1350 1450
+Wire Wire Line
+	1350 1450 1350 1250
+Wire Wire Line
+	3700 1600 3700 1550
+Connection ~ 3700 1550
+Wire Wire Line
+	1000 1550 3250 1550
+Connection ~ 3250 1550
+$Comp
+L 74xGxx:74LVC2G17 U2
+U 2 1 63548491
+P 4500 1250
+F 0 "U2" H 4475 1517 50  0000 C CNN
+F 1 "74LVC2G17" H 4475 1426 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4500 1250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4500 1250 50  0001 C CNN
+	2    4500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:74LVC2G17 U2
+U 1 1 6354A009
+P 8100 1500
+F 0 "U2" H 8075 1767 50  0000 C CNN
+F 1 "74LVC2G17" H 8075 1676 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8100 1500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 8100 1500 50  0001 C CNN
+	1    8100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 6355289E
+P 8450 1750
+F 0 "C8" H 8565 1796 50  0000 L CNN
+F 1 "100n" H 8565 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8488 1600 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104MACNNNC.jsp" H 8450 1750 50  0001 C CNN
+	1    8450 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 63556582
+P 6500 1650
+F 0 "C9" H 6615 1696 50  0000 L CNN
+F 1 "47u" H 6615 1605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1210_3225Metric" H 6538 1500 50  0001 C CNN
+F 3 "https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" H 6500 1650 50  0001 C CNN
+	1    6500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 63557F02
+P 6950 1650
+F 0 "C10" H 7065 1696 50  0000 L CNN
+F 1 "47u" H 7065 1605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1210_3225Metric" H 6988 1500 50  0001 C CNN
+F 3 "https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" H 6950 1650 50  0001 C CNN
+	1    6950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 635583BE
+P 7400 1650
+F 0 "C11" H 7515 1696 50  0000 L CNN
+F 1 "47u" H 7515 1605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1210_3225Metric" H 7438 1500 50  0001 C CNN
+F 3 "https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" H 7400 1650 50  0001 C CNN
+	1    7400 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1500 6950 1500
+Wire Wire Line
+	6950 1500 7400 1500
+Connection ~ 6950 1500
+$Comp
+L power:GND #PWR06
+U 1 1 6355B293
+P 6950 2000
+F 0 "#PWR06" H 6950 1750 50  0001 C CNN
+F 1 "GND" H 6955 1827 50  0000 C CNN
+F 2 "" H 6950 2000 50  0001 C CNN
+F 3 "" H 6950 2000 50  0001 C CNN
+	1    6950 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1500 7800 1500
+Connection ~ 7400 1500
+$Comp
+L Diode:1N4148WS D2
+U 1 1 635602C0
+P 5700 900
+F 0 "D2" V 5654 980 50  0000 L CNN
+F 1 "BAS16H" V 5745 980 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 5700 725 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/bas16ht1-d.pdf" H 5700 900 50  0001 C CNN
+	1    5700 900 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1250 5100 900 
+$Comp
+L Device:R R6
+U 1 1 635648BD
+P 6100 900
+F 0 "R6" V 5893 900 50  0000 C CNN
+F 1 "62k" V 5984 900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6030 900 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 6100 900 50  0001 C CNN
+	1    6100 900 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 900  5950 900 
+$Comp
+L Device:R R7
+U 1 1 63566635
+P 5950 1350
+F 0 "R7" V 5743 1350 50  0000 C CNN
+F 1 "12" V 5834 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5880 1350 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 5950 1350 50  0001 C CNN
+	1    5950 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 63569204
+P 5300 1700
+F 0 "R5" V 5093 1700 50  0000 C CNN
+F 1 "120" V 5184 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5230 1700 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 5300 1700 50  0001 C CNN
+	1    5300 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3906 Q1
+U 1 1 6356BB2F
+P 5700 1700
+F 0 "Q1" H 5891 1654 50  0000 L CNN
+F 1 "MMBT3906" H 5891 1745 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5900 1625 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/MMBT3906.pdf" H 5700 1700 50  0001 L CNN
+	1    5700 1700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5800 1900 6500 1900
+Wire Wire Line
+	6500 1900 6500 1800
+Connection ~ 6500 1900
+Wire Wire Line
+	6500 1900 6950 1900
+Wire Wire Line
+	6950 1900 6950 1800
+Wire Wire Line
+	6950 1900 7400 1900
+Wire Wire Line
+	7400 1900 7400 1800
+Connection ~ 6950 1900
+Wire Wire Line
+	5100 1700 5100 1250
+Connection ~ 5100 1250
+Wire Wire Line
+	4750 1250 5100 1250
+Wire Wire Line
+	6950 2000 6950 1900
+$Comp
+L Device:R_POT_US RV1
+U 1 1 6357CE65
+P 6650 900
+F 0 "RV1" H 6583 946 50  0000 R CNN
+F 1 "500k" H 6583 855 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 6650 900 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf" H 6650 900 50  0001 C CNN
+	1    6650 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 1500 6950 1350
+Wire Wire Line
+	6650 1050 6500 1050
+Wire Wire Line
+	6500 1050 6500 900 
+Text Label 8850 1500 0    50   ~ 0
+DoorIsOpen
+Wire Wire Line
+	1500 5850 2200 5850
+Connection ~ 2200 5850
+Wire Wire Line
+	2000 5550 2200 5550
+Connection ~ 2200 5550
+$Comp
+L Timer:NA556 U3
+U 1 1 635B6C55
+P 2600 3650
+F 0 "U3" H 2600 4231 50  0000 C CNN
+F 1 "NA556" H 2600 4140 50  0000 C CNN
+F 2 "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm" H 2600 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/se556.pdf" H 2600 3650 50  0001 C CNN
+	1    2600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer:NA556 U3
+U 2 1 635B8FA5
+P 6300 3600
+F 0 "U3" H 6300 4181 50  0000 C CNN
+F 1 "NA556" H 6300 4090 50  0000 C CNN
+F 2 "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm" H 6300 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/se556.pdf" H 6300 3600 50  0001 C CNN
+	2    6300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 635BF593
+P 2600 4150
+F 0 "#PWR09" H 2600 3900 50  0001 C CNN
+F 1 "GND" H 2605 3977 50  0000 C CNN
+F 2 "" H 2600 4150 50  0001 C CNN
+F 3 "" H 2600 4150 50  0001 C CNN
+	1    2600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 635C02BC
+P 5450 4100
+F 0 "#PWR013" H 5450 3850 50  0001 C CNN
+F 1 "GND" H 5455 3927 50  0000 C CNN
+F 2 "" H 5450 4100 50  0001 C CNN
+F 3 "" H 5450 4100 50  0001 C CNN
+	1    5450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4050 2600 4150
+Wire Wire Line
+	6300 4000 6300 4100
+$Comp
+L Device:C C12
+U 1 1 635C3118
+P 1450 3800
+F 0 "C12" H 1565 3846 50  0000 L CNN
+F 1 "100n" H 1565 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1488 3650 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104MACNNNC.jsp" H 1450 3800 50  0001 C CNN
+	1    1450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 635C3F60
+P 5450 3750
+F 0 "C14" H 5565 3796 50  0000 L CNN
+F 1 "100n" H 5565 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5488 3600 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104MACNNNC.jsp" H 5450 3750 50  0001 C CNN
+	1    5450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 635C6149
+P 1450 4050
+F 0 "#PWR07" H 1450 3800 50  0001 C CNN
+F 1 "GND" H 1455 3877 50  0000 C CNN
+F 2 "" H 1450 4050 50  0001 C CNN
+F 3 "" H 1450 4050 50  0001 C CNN
+	1    1450 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3950 1450 4050
+Text Label 1550 3150 2    50   ~ 0
+DoorIsOpen
+$Comp
+L power:+5V #PWR08
+U 1 1 635D7D58
+P 2600 2950
+F 0 "#PWR08" H 2600 2800 50  0001 C CNN
+F 1 "+5V" H 2615 3123 50  0000 C CNN
+F 2 "" H 2600 2950 50  0001 C CNN
+F 3 "" H 2600 2950 50  0001 C CNN
+	1    2600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 635D8903
+P 6300 2900
+F 0 "#PWR012" H 6300 2750 50  0001 C CNN
+F 1 "+5V" H 6315 3073 50  0000 C CNN
+F 2 "" H 6300 2900 50  0001 C CNN
+F 3 "" H 6300 2900 50  0001 C CNN
+	1    6300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3250 2600 2950
+Wire Wire Line
+	6300 3200 6300 2900
+Wire Wire Line
+	5800 4500 5800 3800
+$Comp
+L Device:C C15
+U 1 1 635DECB5
+P 5250 3350
+F 0 "C15" H 5365 3396 50  0000 L CNN
+F 1 "100n" H 5365 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5288 3200 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104MACNNNC.jsp" H 5250 3350 50  0001 C CNN
+	1    5250 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3200 5250 3200
+Connection ~ 6300 3200
+Wire Wire Line
+	5250 3500 5250 4100
+$Comp
+L Device:C C13
+U 1 1 63600BEC
+P 3500 4100
+F 0 "C13" H 3615 4146 50  0000 L CNN
+F 1 "47u" H 3615 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_1210_3225Metric" H 3538 3950 50  0001 C CNN
+F 3 "https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" H 3500 4100 50  0001 C CNN
+	1    3500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 6360201D
+P 7000 4450
+F 0 "C16" H 7115 4496 50  0000 L CNN
+F 1 "47u" H 7115 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_1210_3225Metric" H 7038 4300 50  0001 C CNN
+F 3 "https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" H 7000 4450 50  0001 C CNN
+	1    7000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 63603AB9
+P 3500 4300
+F 0 "#PWR010" H 3500 4050 50  0001 C CNN
+F 1 "GND" H 3505 4127 50  0000 C CNN
+F 2 "" H 3500 4300 50  0001 C CNN
+F 3 "" H 3500 4300 50  0001 C CNN
+	1    3500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 63604162
+P 7000 4700
+F 0 "#PWR014" H 7000 4450 50  0001 C CNN
+F 1 "GND" H 7005 4527 50  0000 C CNN
+F 2 "" H 7000 4700 50  0001 C CNN
+F 3 "" H 7000 4700 50  0001 C CNN
+	1    7000 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4600 7000 4700
+$Comp
+L Device:R R9
+U 1 1 636240F2
+P 3500 3800
+F 0 "R9" V 3293 3800 50  0000 C CNN
+F 1 "15k" V 3384 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3430 3800 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 3500 3800 50  0001 C CNN
+	1    3500 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5250 4100 5450 4100
+Wire Wire Line
+	5450 3900 5450 4100
+Connection ~ 5450 4100
+Wire Wire Line
+	5450 4100 6300 4100
+Wire Wire Line
+	5450 3600 5800 3600
+Wire Wire Line
+	3100 3650 3500 3650
+$Comp
+L Device:R R8
+U 1 1 63650891
+P 3500 3500
+F 0 "R8" V 3293 3500 50  0000 C CNN
+F 1 "1k" V 3384 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3430 3500 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 3500 3500 50  0001 C CNN
+	1    3500 3500
+	-1   0    0    1   
+$EndComp
+Connection ~ 3500 3650
+Wire Wire Line
+	3500 3950 3100 3950
+Wire Wire Line
+	3100 3950 3100 3850
+Connection ~ 3500 3950
+Wire Wire Line
+	3500 4250 3500 4300
+Wire Wire Line
+	3500 3350 3500 2950
+Wire Wire Line
+	3500 2950 2600 2950
+Connection ~ 2600 2950
+Wire Wire Line
+	3100 3450 3100 3250
+$Comp
+L LED:CQY99 LED1
+U 1 1 6367980B
+P 4150 3900
+F 0 "LED1" V 4146 3821 50  0000 R CNN
+F 1 "LED-Red-10mm" V 4055 3821 50  0000 R CNN
+F 2 "LED_THT:LED_D10.0mm" H 4150 4075 50  0001 C CNN
+F 3 "https://www.prtice.info/IMG/pdf/CQY99.pdf" H 4100 3900 50  0001 C CNN
+	1    4150 3900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4150 3250
+$Comp
+L power:GND #PWR011
+U 1 1 636840F0
+P 4150 4150
+F 0 "#PWR011" H 4150 3900 50  0001 C CNN
+F 1 "GND" H 4155 3977 50  0000 C CNN
+F 2 "" H 4150 4150 50  0001 C CNN
+F 3 "" H 4150 4150 50  0001 C CNN
+	1    4150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4100 4150 4150
+Wire Wire Line
+	4950 4500 5800 4500
+Wire Wire Line
+	4150 3250 4950 3250
+Wire Wire Line
+	4950 3250 4950 4500
+Wire Wire Line
+	3100 3250 4150 3250
+$Comp
+L Device:R R12
+U 1 1 636A0239
+P 7000 4100
+F 0 "R12" V 6793 4100 50  0000 C CNN
+F 1 "15k" V 6884 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6930 4100 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 7000 4100 50  0001 C CNN
+	1    7000 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 636A09AA
+P 7000 3750
+F 0 "R11" V 6793 3750 50  0000 C CNN
+F 1 "1k" V 6884 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6930 3750 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 7000 3750 50  0001 C CNN
+	1    7000 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 4250 7000 4300
+Wire Wire Line
+	7000 3900 7000 3950
+Connection ~ 7000 4300
+Wire Wire Line
+	6800 3800 6800 4300
+$Comp
+L Diode:1N4148WS D4
+U 1 1 636C0D6A
+P 7400 3900
+F 0 "D4" V 7354 3980 50  0000 L CNN
+F 1 "BAS16H" V 7445 3980 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 7400 3725 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/bas16ht1-d.pdf" H 7400 3900 50  0001 C CNN
+	1    7400 3900
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_POT_US RV2
+U 1 1 636C55CB
+P 7400 3350
+F 0 "RV2" H 7333 3396 50  0000 R CNN
+F 1 "10k" H 7333 3305 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 7400 3350 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf" H 7400 3350 50  0001 C CNN
+	1    7400 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3200 7550 3200
+Wire Wire Line
+	7550 3200 7550 3350
+Wire Wire Line
+	6300 2900 7400 2900
+Connection ~ 6300 2900
+Wire Wire Line
+	3250 700  3250 750 
+Wire Wire Line
+	6800 4300 7000 4300
+Wire Wire Line
+	6800 3600 7000 3600
+Wire Wire Line
+	7400 4050 7400 4300
+Wire Wire Line
+	7400 2900 7400 3200
+Connection ~ 7400 3200
+Wire Wire Line
+	7400 3500 7400 3600
+Wire Wire Line
+	7000 3600 7400 3600
+Connection ~ 7000 3600
+Connection ~ 7400 3600
+Wire Wire Line
+	7400 3600 7400 3750
+Wire Wire Line
+	7000 4300 7400 4300
+Wire Wire Line
+	3250 1050 3250 1250
+Wire Wire Line
+	3050 1250 3250 1250
+Connection ~ 3250 1250
+Wire Wire Line
+	3250 1250 3700 1250
+Wire Wire Line
+	3700 1250 4200 1250
+Wire Wire Line
+	5800 1500 5800 1350
+Connection ~ 6950 1350
+Wire Wire Line
+	5100 900  5550 900 
+Wire Wire Line
+	6250 900  6500 900 
+Connection ~ 6500 900 
+Wire Wire Line
+	6800 900  6950 900 
+Wire Wire Line
+	6950 900  6950 1350
+Wire Wire Line
+	5100 1700 5150 1700
+Wire Wire Line
+	5450 1700 5500 1700
+Wire Wire Line
+	6100 1350 6950 1350
+$Comp
+L Transistor_FET:BS170F Q2
+U 1 1 6378BC0E
+P 8600 4300
+F 0 "Q2" H 8805 4346 50  0000 L CNN
+F 1 "NTR4503N" H 8805 4255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8800 4225 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/BS170F.pdf" H 8600 4300 50  0001 L CNN
+	1    8600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 63794B57
+P 8700 4550
+F 0 "#PWR016" H 8700 4300 50  0001 C CNN
+F 1 "GND" H 8705 4377 50  0000 C CNN
+F 2 "" H 8700 4550 50  0001 C CNN
+F 3 "" H 8700 4550 50  0001 C CNN
+	1    8700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4500 8700 4550
+Wire Wire Line
+	6800 3400 6800 2700
+Wire Wire Line
+	1450 3650 2100 3650
+Wire Wire Line
+	1850 3850 1850 3150
+Wire Wire Line
+	1850 3850 2100 3850
+Wire Wire Line
+	1550 3150 1850 3150
+Wire Wire Line
+	2100 3450 3100 3850
+Connection ~ 3100 3850
+Wire Wire Line
+	5800 3400 6800 3800
+Connection ~ 6800 3800
+$Comp
+L CMI-1614C-120:CMI-1614C-120 BEEP1
+U 1 1 635B9F66
+P 8700 3750
+F 0 "BEEP1" H 8804 3796 50  0000 L CNN
+F 1 "CMI-1614C-120" H 8804 3705 50  0000 L CNN
+F 2 "CMI Devices beeper footprint:CUI_CMI-1614C-120" H 8700 3750 50  0001 L BNN
+F 3 "" H 8700 3750 50  0001 L BNN
+F 4 "CUI" H 8700 3750 50  0001 L BNN "MF"
+F 5 "16 mm, 12 V, 95 dB, 2.2 kHz, Through Hole, Driving Circuit, Magnetic Audio Indicator Buzzer" H 8700 3750 50  0001 L BNN "DESCRIPTION"
+F 6 "CMI-1614C-120" H 8700 3750 50  0001 L BNN "MP"
+F 7 "2.22 USD" H 8700 3750 50  0001 L BNN "PRICE"
+F 8 "CUI" H 8700 3750 50  0001 L BNN "PACKAGE"
+F 9 "Warning" H 8700 3750 50  0001 L BNN "AVAILABILITY"
+	1    8700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3400 8700 3550
+Wire Wire Line
+	8700 3950 8700 4100
+$Comp
+L Device:R R14
+U 1 1 635F2A88
+P 8250 3600
+F 0 "R14" V 8043 3600 50  0000 C CNN
+F 1 "120" V 8134 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8180 3600 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 8250 3600 50  0001 C CNN
+	1    8250 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 635F48A6
+P 4150 3550
+F 0 "R13" V 3943 3550 50  0000 C CNN
+F 1 "120" V 4034 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4080 3550 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 4150 3550 50  0001 C CNN
+	1    4150 3550
+	-1   0    0    1   
+$EndComp
+Connection ~ 8400 4300
+$Comp
+L power:+5V #PWR017
+U 1 1 63625ECC
+P 8100 950
+F 0 "#PWR017" H 8100 800 50  0001 C CNN
+F 1 "+5V" H 8115 1123 50  0000 C CNN
+F 2 "" H 8100 950 50  0001 C CNN
+F 3 "" H 8100 950 50  0001 C CNN
+	1    8100 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1600 8100 1900
+Wire Wire Line
+	8100 1400 8100 950 
+Connection ~ 8100 1400
+Wire Wire Line
+	8350 1500 8850 1500
+$Comp
+L Device:R R15
+U 1 1 636587A5
+P 8250 3950
+F 0 "R15" V 8043 3950 50  0000 C CNN
+F 1 "120" V 8134 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8180 3950 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 8250 3950 50  0001 C CNN
+	1    8250 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 3950 8100 4300
+Connection ~ 8100 3950
+Connection ~ 8400 3950
+Wire Wire Line
+	8400 3950 8400 4300
+Wire Wire Line
+	6800 2700 8100 2700
+NoConn ~ 1500 5650
+$Comp
+L power:+12P #PWR015
+U 1 1 6369AE21
+P 2200 5150
+F 0 "#PWR015" H 2200 5000 50  0001 C CNN
+F 1 "+12P" H 2215 5323 50  0000 C CNN
+F 2 "" H 2200 5150 50  0001 C CNN
+F 3 "" H 2200 5150 50  0001 C CNN
+	1    2200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5550 2200 5150
+$Comp
+L power:+12P #PWR019
+U 1 1 636A3153
+P 8700 3400
+F 0 "#PWR019" H 8700 3250 50  0001 C CNN
+F 1 "+12P" H 8715 3573 50  0000 C CNN
+F 2 "" H 8700 3400 50  0001 C CNN
+F 3 "" H 8700 3400 50  0001 C CNN
+	1    8700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1900 8100 1900
+Connection ~ 7400 1900
+Connection ~ 8100 1900
+$Comp
+L power:+12P #PWR01
+U 1 1 635F32AF
+P 1500 5000
+F 0 "#PWR01" H 1500 4850 50  0001 C CNN
+F 1 "+12P" H 1515 5173 50  0000 C CNN
+F 2 "" H 1500 5000 50  0001 C CNN
+F 3 "" H 1500 5000 50  0001 C CNN
+	1    1500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 635F4D4A
+P 1500 6200
+F 0 "#PWR018" H 1500 5950 50  0001 C CNN
+F 1 "GND" H 1505 6027 50  0000 C CNN
+F 2 "" H 1500 6200 50  0001 C CNN
+F 3 "" H 1500 6200 50  0001 C CNN
+	1    1500 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 635F6719
+P 1500 5000
+F 0 "#FLG01" H 1500 5075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1500 5173 50  0000 C CNN
+F 2 "" H 1500 5000 50  0001 C CNN
+F 3 "~" H 1500 5000 50  0001 C CNN
+	1    1500 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 635F7B05
+P 1500 6200
+F 0 "#FLG02" H 1500 6275 50  0001 C CNN
+F 1 "PWR_FLAG" H 1500 6373 50  0000 C CNN
+F 2 "" H 1500 6200 50  0001 C CNN
+F 3 "~" H 1500 6200 50  0001 C CNN
+	1    1500 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 63604A22
+P 3950 5300
+F 0 "#FLG03" H 3950 5375 50  0001 C CNN
+F 1 "PWR_FLAG" H 3950 5473 50  0000 C CNN
+F 2 "" H 3950 5300 50  0001 C CNN
+F 3 "~" H 3950 5300 50  0001 C CNN
+	1    3950 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5550 3950 5300
+Connection ~ 3950 5550
+Wire Wire Line
+	4150 3250 4150 3400
+Wire Wire Line
+	4150 3700 4150 3800
+$Comp
+L Device:R R16
+U 1 1 636052F0
+P 8250 4300
+F 0 "R16" V 8043 4300 50  0000 C CNN
+F 1 "120" V 8134 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8180 4300 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 8250 4300 50  0001 C CNN
+	1    8250 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 3600 8400 3950
+Wire Wire Line
+	8100 3600 8100 3950
+Wire Wire Line
+	8100 2700 8100 3600
+Connection ~ 8100 3600
+Wire Wire Line
+	8100 1900 8450 1900
+Wire Wire Line
+	8450 1600 8450 1400
+Wire Wire Line
+	8100 1400 8450 1400
+$EndSCHEMATC

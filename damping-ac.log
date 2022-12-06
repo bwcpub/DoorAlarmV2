@@ -1,0 +1,37 @@
+
+   --- Expanded Deck Component Count ---
+C's 1
+L's 1
+R's 1
+V's 1
+tot: 4
+
+
+    --- Expanded Netlist ---
+* C:\Users\makoto\Documents\KiCad\FreezerDoorAlarmV2\damping-ac.asc
+r1 n002 n001 1k
+c1 n002 0 220n
+l1 n003 n001 1m
+v1 n003 0 sine(1 1 3k 1m 0 0 100)
+.tran 40m startup
+.end
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Sep 07 16:17:29 2022
+Total elapsed time: 0.244 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 9055
+traniter = 9052
+tranpoints = 4527
+accept = 3003
+rejected = 1524
+matrix size = 4
+fillins = 0
+solver = Normal
+Matrix Compiler1: 118 bytes object code size  0.0/0.0/[0.0]
+Matrix Compiler2: off  [0.0]/0.1/0.1
+
