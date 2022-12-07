@@ -1,4 +1,4 @@
-"# DoorAlarmV2" 
+# DoorAlarmV2
 
 ## A newer, hopefully better, version of the Door Alarm board.
 
